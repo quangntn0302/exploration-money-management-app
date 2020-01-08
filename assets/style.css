@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 62.5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    font-size: 1.6rem;
+    width: 130rem;
+    margin: 2rem auto;
+    background-color: #d6d9e7;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(11, 6rem);
+    grid-gap: 2.5rem;
+    color: white;
+}
+
+.container .phone-item {
+    background-color: #101010;
+}
+
+.container .phone-item.phone-item-1 {
+    grid-column: 2 / 4;
+    grid-row: 2 / 8;
+    border-radius: 2rem;
+}
+
+.container .phone-item.phone-item-1 .phone-1 {}
+
+.container .phone-item.phone-item-1 .phone-1 .phone-1__name {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.container .phone-item.phone-item-1 .phone-1 .phone-1__name .phone-1__message {
+    font-size: 1.2rem;
+    color: rgb(139, 139, 139);
+}
+
+.container .phone-item.phone-item-1 .phone-1 .phone-1__box {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #202020;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    padding: 1rem 1rem;
+    align-items: center;
+}
+
+.container .phone-item.phone-item-1 .phone-1 .phone-1__box .phone-1__icon {
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1.5rem;
+    text-align: center;
+    width: 3.8rem;
+}
+
+.container .phone-item.phone-item-1 .phone-1 .phone-1__box .phone-1__icon.phone-1__icon-user{
+    background-image: linear-gradient(135deg, #72EDF2, #5151E5);
+}
+
+.container .phone-item.phone-item-1 .phone-1 .phone-1__box .phone-1__icon.phone-1__icon-home{
+    background-image: linear-gradient(135deg, #3B2667, #BC78EC);
+}
+
+.container .phone-item.phone-item-1 .phone-1 .phone-1__box .phone-1__icon.phone-1__icon-shop{
+    background-image: linear-gradient(135deg, #FFE985, #FA742B);
+}
+
+.container .phone-item.phone-item-1 .phone-1 .phone-1__box .phone-1__icon.phone-1__icon-wallet{
+    background-image: linear-gradient(135deg, #FF96F9, #C32BAC);
+}
+
+
+
+.container .phone-item.phone-item-1 .phone-1 .phone-1__box .phone-1__account {
+    font-size: 1.2rem;
+}
+
+.container .phone-item.phone-item-1 .phone-1 .phone-1__box .phone-1__account .phone-1__name-wallet {
+    font-size: 1rem;
+    color: rgb(139, 139, 139);
+    margin-bottom: 0.5rem;
+}
+
+.container .phone-item.phone-item-1 .phone-1 .phone-1__footer {
+    display: flex;
+    text-align: center;
+    margin-top: 3rem;
+    align-items: center;
+}
+
+.container .phone-item.phone-item-1 .phone-1 .phone-1__footer .phone-1__icon {
+    width: 33.33%;
+    padding: 1rem;
+}
+
+.container .phone-item.phone-item-1 .phone-1 .phone-1__footer .phone-1__icon div {
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    margin-left: 15px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .phone-item.phone-item-1 .phone-1 .phone-1__footer .phone-1__icon .icon {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.container .phone-item.phone-item-1 .phone-1 .phone-1__footer .phone-1__icon:last-child {
+    color: grey;
+}
+
+.container .phone-item.phone-item-2 {
+    grid-column: 4 / 6;
+    grid-row: 1 / 5;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.container .phone-item.phone-item-2 .phone-2__function {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+.container .phone-item.phone-item-2 .phone-2__function p:not(:first-child){
+    margin-top: 2rem;
+}
+
+.container .phone-item.phone-item-2 .phone-2__footer {
+    display: flex;
+    text-align: center;
+    margin-top: 10rem;
+    align-items: center;
+}
+
+.container .phone-item.phone-item-2 .phone-2__footer .phone-2__icon {
+    width: 33.33%;
+    padding: 1rem;
+}
+
+.container .phone-item.phone-item-2 .phone-2__footer .phone-2__icon div {
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    margin-left: 15px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .phone-item.phone-item-2 .phone-2__footer .phone-2__icon .icon {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.container .phone-item.phone-item-2 .phone-2__footer .phone-2__icon:last-child {
+    color: grey;
+}
+
+.container .phone-item.phone-item-3 {
+    grid-column: 4 / 6;
+    grid-row: 5 / 11;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.container .phone-item.phone-item-3 .phone-3 .phone-3__header {
+    position: relative;
+}
+
+.container .phone-item.phone-item-3 .phone-3 .phone-3__header .phone-3__container {
+    background-image: linear-gradient(135deg, #79F1A4, #0E5CAD);
+    width: 92%;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    padding: 2rem .5rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.container .phone-item.phone-item-3 .phone-3 .phone-3__header .phone-3__container .phone-3__icon-user div {
+    display: block;
+    background-color: white;
+    padding: 1rem;
+    color: black;
+    border-radius: 50%;
+    width: 4.1rem;
+    margin: 0 auto;
+}
+
+.container .phone-item.phone-item-3 .phone-3 .phone-3__header .phone-3__container .phone-3__name {
+    font-size: 1.1rem;
+    margin: .5rem 0;
+}
+
+.container .phone-item.phone-item-3 .phone-3 .phone-3__header .phone-3__container .phone-3__balance {
+    font-size: 1.8rem;
+}
+
+.phone-3__corner {
+    width: .5rem;
+    height: 13rem;
+    background-image: linear-gradient(135deg, #F761A1, #8C1BAB);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.container .phone-item.phone-item-3 .phone-3 .phone-3__notification {
+    width: 92%;
+    margin: 0 auto;
+    background-color: #202020;
+    border-radius: 1rem;
+    margin-top: 1.0rem;
+    padding: 1rem 1rem;
+}
+
+.container .phone-item.phone-item-3 .phone-3 .phone-3__notification .phone-3__date {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.container .phone-item.phone-item-3 .phone-3 .phone-3__notification .phone-3__detail .phone-3__product {
+    display: flex;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+}
+
+.container .phone-item.phone-item-3 .phone-3 .phone-3__notification .phone-3__detail .phone-3__product:not(:last-child) {
+    border-bottom: 1px solid rgb(94, 94, 94);
+}
+
+.container .phone-item.phone-item-3 .phone-3 .phone-3__notification .phone-3__detail .phone-3__product .phone-3__icon {
+    margin-right: 1.1rem;
+    color: grey;
+}
+
+.container .phone-item.phone-item-3 .phone-3 .phone-3__notification .phone-3__detail .phone-3__product .phone-3__information {
+    width: 70%;
+}
+
+.container .phone-item.phone-item-3 .phone-3 .phone-3__notification .phone-3__detail .phone-3__product .phone-3__information p:last-child {
+    font-size: 1.0rem;
+    color: grey;
+}
+
+.container .phone-item.phone-item-3 .phone-3 .phone-3__footer {
+    display: flex;
+    text-align: center;
+    margin-top: -1.5rem;
+    align-items: center;
+    background-color: black;
+}
+
+.container .phone-item.phone-item-3 .phone-3 .phone-3__footer .phone-3__icon {
+    width: 33.33%;
+    padding: 1rem;
+    
+}
+
+.container .phone-item.phone-item-3 .phone-3__footer .phone-3__icon div {
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    margin-left: 15px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .phone-item.phone-item-3 .phone-3__footer .phone-3__icon .icon {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.container .phone-item.phone-item-3 .phone-3__footer .phone-3__icon:last-child {
+    color: grey;
+}
+
+
+.container .phone-item.phone-item-4 {
+    grid-column: 6 / 8;
+    grid-row: 3 / 9;
+    border-radius: 2rem;
+}
+
+.container .phone-item.phone-item-4 .phone-4 .phone-4__header {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.container .phone-item.phone-item-4 .phone-4 .phone-4__header .phone-4__title {
+    font-size: 2.3rem;
+}
+
+.container .phone-item.phone-item-4 .phone-4 .phone-4__header .phone-4__subtitle {
+    font-size: 1.1rem;
+    color: grey;
+}
+
+.container .phone-item.phone-item-4 .phone-4 .phone-4__main {
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.container .phone-item.phone-item-4 .phone-4 .phone-4__main .phone-4__notification {
+    background-color: #202020;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.container .phone-item.phone-item-4 .phone-4 .phone-4__main .phone-4__notification .phone-4__date {
+    display: flex;
+}
+
+.container .phone-item.phone-item-4 .phone-4 .phone-4__main .phone-4__notification .phone-4__date .date__detail {
+    width: 95%;
+    font-size: 1.5rem;
+}
+
+.container .phone-item.phone-item-4 .phone-4 .phone-4__main .phone-4__notification .phone-4__date div:last-child {
+    font-size: 1.1rem;
+    margin-top: .1rem;
+}
+
+.container .phone-item.phone-item-4 .phone-4 .phone-4__main .phone-4__notification .phone-4__detail {
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+
+.container .phone-item.phone-item-4 .phone-4 .phone-4__main .phone-4__notification .phone-4__detail:not(:last-child) {
+    border-bottom: 1px solid rgb(94, 94, 94);
+}
+
+.container .phone-item.phone-item-4 .phone-4 .phone-4__main .phone-4__notification .phone-4__detail .phone-4__report {
+    display: flex;
+}
+
+.container .phone-item.phone-item-4 .phone-4 .phone-4__main .phone-4__notification .phone-4__detail .phone-4__report .phone-4__icon {
+    width: 2.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40%;
+    margin-right: 1rem;
+    
+}
+
+.container .phone-item.phone-item-4 .phone-4 .phone-4__main .phone-4__notification .phone-4__detail .phone-4__revenue .phone-4__icon {
+    background-image: linear-gradient(145deg, #ABDCFF,#0396FF);
+}
+
+.container .phone-item.phone-item-4 .phone-4 .phone-4__main .phone-4__notification .phone-4__detail .phone-4__losses .phone-4__icon {
+    background-image: linear-gradient(145deg, #FEB692,#EA5455);
+}
+
+.container .phone-item.phone-item-4 .phone-4 .phone-4__main .phone-4__notification .phone-4__detail .phone-4__revenue .phone-4__icon div {
+    transform: rotateZ(45deg);
+}
+
+.container .phone-item.phone-item-4 .phone-4 .phone-4__main .phone-4__notification .phone-4__detail .phone-4__losses .phone-4__icon div {
+    transform: rotateZ(45deg);
+}
+
+.container .phone-item.phone-item-4 .phone-4 .phone-4__main .phone-4__notification .phone-4__detail .phone-4__report .phone-4__information p:last-child {
+    font-size: 0.9rem;
+    color: grey;
+}
+
+.container .phone-item.phone-item-4 .phone-4 .phone-4__main .phone-4__notification:last-child {
+    background-image: linear-gradient(180deg, #77777734,rgba(0, 0, 0, 0.61));
+}
+
+.container .phone-item.phone-item-4 .phone-4 .phone-4__footer {
+    padding: 0 0 0 1rem;
+    font-size: 1.2rem;
+    margin-top: -.5rem;
+}
+
+.container .phone-item.phone-item-4 .phone-4 .phone-4__footer span {
+    margin-left: 1rem;
+}
+
+.container .phone-item.phone-item-5 {
+    grid-column: 6 / 8;
+    grid-row: 9 / 12;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.container .phone-item.phone-item-6 {
+    grid-column: 8 / 10;
+    grid-row: 5 / 11;
+    border-radius: 2rem;
+}
